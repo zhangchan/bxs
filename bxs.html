@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.1, minimum-scale=0.1, maximum-scale=0.1, user-scalable=no">
+<!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> -->
+<title>百信搜</title>
+<link rel="stylesheet" type="text/css" href="css/bxs.css">
+</head>
+
+<body>
+	<div class="header">
+		<label>身份证：</label>
+		<input type="text" class="sfid" placeholder="请输入身份证号码">
+		<label>手机号：</label>
+		<input type="text" class="tel" placeholder="请输入手机号码">
+		<label>时间段：</label>
+		<input type="text" class="time" id="start" value="" readonly><span class="txt">至</span>
+		<input type="text" class="time" id="end" readonly>
+		<button class="search">查询</button>
+		<span class="now"></span>
+	</div>
+	<div class="main">
+		<div class="siderbar">
+			<ul>
+				<li>
+					<img src="img/u1.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u2.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u3.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u1.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u2.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u3.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u1.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u2.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u3.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u1.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u2.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/u3.png">
+					<div class="text">
+						<p>柴*飞 动作类型：核查</p>
+						<p>2016-10-13  9:45:30</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="map">
+				<div class="bz">
+					<img src="img/bzmap.png">
+				</div>		
+			</div>
+			<div class="mapdesc">
+				<div class="zdtime">
+					<label>指定时间段统计：</label>
+					<input type="text" id="zdstart" readonly>
+					<span>至</span>
+					<input type="text" id="zdend"readonly>
+				</div>
+				<h5>总使用量统计<span class="Countdown">(4分59秒后更新数据)</span></h5>
+				<div class="count">
+					<div class="countNum">
+						<div class="dl">
+							<i class="dli"></i>
+							<span class="bar_dl" param="4681" style="width:120px;"></span>
+							登录 4,681
+						</div>
+						<div class="cj">
+							<i class="cji"></i>
+							<span class="bar_cj" param="3102" style="width:82px;"></span>
+							采集 3,102
+						</div>
+						<div class="hc">
+							<i class="hci"></i>
+							<span class="bar_hc" param="3568" style="width:90px;"></span>
+							核查 3,568
+						</div>
+					</div>
+				</div>
+				<div class="hcfx" id="hcfx"></div>
+				<div class="cbox">
+					<ul>
+						<li id="dlchart"></li>
+						<li id="cjchart"></li>
+						<li id="hcchart"></li>
+						<li id="sjchart"></li>
+					</ul>					
+				</div>
+				<div class="sttjbtn">
+					<ul>
+						<li class="dl cur"></li>
+						<li class="cj"></li>
+						<li class="hc"></li>
+						<li class="sj"></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="histogram" id="histogram">
+
+		</div>
+	</div>
+	<span class="sp"></span>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/dist/echarts-all.js"></script>
+<script type="text/javascript" src="js/laydate/laydate.js"></script>
+<script type="text/javascript" src="js/bxs.js"></script>

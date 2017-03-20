@@ -1,0 +1,117 @@
+@charset "utf-8";
+*{padding: 0;margin: 0;}
+body{font-family: 'Microsoft YaHei';min-width: 960px; overflow: hidden;}
+li{list-style-type: none;}
+
+
+.loading{width:100%;height:100%;background:#fff;position:absolute;left:0;top:0;z-index:999;display:block;}
+.loading img{position:absolute;left:50%;top:50%;margin-left:-52.5px;margin-top:-52px;}
+
+.header .sfid,.header .tel,.header button.search,.content .mapdesc .count .countNum i{background:url(../img/icons.png) no-repeat;}
+.header{ width: 100%; height: 45px;line-height: 40px; background: url(../img/tbg.png) repeat-x;}
+.header label{color: #fff;font-size: 14px;margin-left: 10px;}
+.header span{color: #fff;}
+.header input.sfid,.header input.tel{border: 0;outline: 0;height: 28px;padding-left: 10px;}
+.header input{position: relative;line-height: 28px;}
+.header .sfid{width: 150px;}
+.header .tel{width: 110px;background-position: 0px -30px;}
+.header input.time{margin-right: 4px; width: 145px;height: 26px;padding-left: 5px;border: 1px solid #dedddd;outline: 0;background: url(../js/laydate/skins/danlan/icon.png) 128px 6px no-repeat #fff;}
+.header button.search{ width: 75px;height: 33px;line-height: 33px; border: 0;outline: 0;cursor:pointer;background-position: 0px -60px;color: #fff;font-weight: bold;position: relative;top: 2px;top:-1px\9;}
+.header span.now{float: right;margin-right: 25px;}
+
+
+
+/* 左边模块 */
+.main{}
+.main .siderbar{width: 185px;background: #f2f8fb;border: 1px solid #71a8e2;float: left;margin-top: 3px;margin-left: 3px;min-height: 440px;overflow-y:hidden; }
+.main .siderbar ul{}
+.main .siderbar ul li{ height: 41px;padding-top: 10px; padding-bottom: 10px; border-bottom: 1px dashed #c8e1f1;}
+.main .siderbar ul li:last-child{border-bottom: 0; }
+.main .siderbar ul li img{float: left;margin: 0px 10px 0 5px;width: 40px;height: 40px;border-radius: 5px;}
+.main .siderbar ul li p{font-size: 12px;color: #555;line-height: 20px;}
+.main .siderbar ul li p:last-child{color:#8d8d8d;}
+.main .content{float: left;border: 1px solid #dddddd; background: #f9f9f9;margin-left: 5px;margin-top: 3px;overflow: hidden;}
+.content .map{width: 576px;height: 539px;float: left;}
+.content .map .bz {margin: 10px;}
+.content .map .bz img{ width: 100%; height: 100%;}
+
+
+/*右上模块  */
+.content .mapdesc{float:left;width:510px;padding-top:12px;color:#686868;}
+.content .mapdesc h5{font-weight:normal;}
+.content .mapdesc h5 span{color:#0e70de;}
+
+span.mdli{background: url(../img/green.gif) no-repeat; width:36px;height:48px;display: block;}
+span.mcji{background: url(../img/blue.gif) no-repeat;width:36px;height:48px;display: block;}
+span.mhci{background: url(../img/red.gif) no-repeat;width:36px;height:48px;display: block;}
+
+/* 统计 */
+.content .mapdesc .count{width: 43%;}
+.content .mapdesc .count .countNum i{float:left;padding:16px 10px 9px 10px;margin-right:6px;position:relative;top:-3px;zoom:0.8;}
+.content .mapdesc .count .countNum i.hci{background-position:-130px -33px;}
+.content .mapdesc .count .countNum i.cji{background-position:-80px -63px;}
+.content .mapdesc .count .countNum i.dli{background-position:-103px -63px;}
+.content .mapdesc .count .countNum{clear:both;font-size: 12px;padding-top: 15px;float: left;}
+.content .mapdesc .count .countNum div{height:26px;line-height:16px;}
+.content .mapdesc .count .countNum span{height:15px;margin-right:10px;display:block;float:left;}
+.content .mapdesc .count .countNum .hc span.bar_hc{background:#ea525a;}
+.content .mapdesc .count .countNum .cj span.bar_cj{background:#7fb9fb;}
+.content .mapdesc .count .countNum .dl span.bar_dl{background:#a9df34;}
+
+/* 县市  */
+.hcfx{width: 57%;height: 130px;float: right;position: relative;top: -20px;}
+.dltimes,.cjtimes,.hctimes{ clear: both;width: 100%;height: 95px;position: relative;top:-30px }
+.dltimes:before,.cjtimes:before,.hctimes:before{content: "";display: block;padding:16px 10px 9px 10px;position: absolute;background:url(../img/icons.png) no-repeat;zoom:0.8;left: 5px;top: 2px}
+.dltimes:before{background-position:-103px -63px;}
+.cjtimes:before{background-position:-80px -63px;}
+.hctimes:before{background-position:-130px -33px;}
+
+.histogram{width: 800px; float:left;overflow-x:auto;overflow-y:hidden;position: relative;height:140px;}
+
+.Countdown_h5{width:220px;position:relative;float:right;right:30px;bottom:160px;color: #686868;font-weight: normal;}
+.Countdown_h5 span{color: #0e70de;}
+.countdown{position:relative;float:left;left:287px;bottom:165px;font-size:16px;color:#686868;}
+
+.user_ul{border-bottom: 1px #ccc dotted;}
+
+.content .mapdesc .cbox{width: 100%;height: 125px; clear: both;overflow: hidden;position: relative;top: -30px;}
+.content .mapdesc .cbox ul{position: absolute;left: 0;width: 3000px;}
+.content .mapdesc .cbox ul li{width: 450px;height: 125px; float: left;position: relative;}
+.cbox ul li#dlchart:before,.cbox ul li#cjchart:before,.cbox ul li#hcchart:before{position: absolute;content: "";display: block;padding: 16px 10px 9px 10px;background: url(../img/icons.png) no-repeat;zoom: 0.6;left: 0;top: 0px;}
+.cbox ul li#dlchart:before{background-position: -103px -63px;}
+.cbox ul li#cjchart:before{background-position: -80px -63px;}
+.cbox ul li#hcchart:before{background-position: -130px -33px;}
+.cbox ul li#sjchart:before{}
+.sttjbtn{width: 150px;margin: 0 auto;position: relative;top: -30px;}
+.sttjbtn ul{}
+.sttjbtn ul li{width: 13px;height: 13px;border: 3px solid #f9f9f9; float: left;margin-right: 15px;cursor: pointer;}
+.sttjbtn ul li.dl{background: #a9df34;}
+.sttjbtn ul li.cj{background: #7fb9fb;}
+.sttjbtn ul li.hc{background: #ea525a;}
+.sttjbtn ul li.sj{background: #ccc;}
+.sttjbtn ul li.dl.cur{border-color:#a9df34;}
+.sttjbtn ul li.cj.cur{border-color:#7fb9fb;}
+.sttjbtn ul li.hc.cur{border-color:#ea525a;}
+.sttjbtn ul li.sj.cur{border-color:#ccc;}
+
+.zdtime{font-size: 14px;padding-bottom: 10px;}
+/*.zdtime span{font-size: 12px;}*/
+.zdtime input{width: 140px;height: 24px;padding-left: 5px; outline: 0;border: 1px solid #c6bd8a; }
+.zdtime input{background: url(../js/laydate/skins/danlan/icon.png) 124px 5px no-repeat #fff;}
+.zdtime span{margin-right: 3px;margin-left: 2px;}
+@media screen and (max-width:1120px){
+	.header span.now{display: none;}
+
+}
+@media screen and (min-width:1100px){
+	.main .siderbar{width: 210px;}
+}
+
+@media screen and (min-height:640px){
+	.content .mapdesc .count .countNum div{height: 30px;}
+	.zdtime {padding-bottom: 20px;}
+	.hcfx {height: 150px;}
+}
+@media screen and (min-height:560px){
+	.histogram{height:170px;}
+}
